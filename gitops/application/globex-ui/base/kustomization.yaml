@@ -1,3 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+- name: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui
+  newName: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui
+  newTag: latest
 resources:
 - dep-activity-tracking-simulator.yaml
 - dep-activity-tracking.yaml
@@ -33,8 +38,4 @@ resources:
 - svc-inventory.yaml
 - svc-order-placement.yaml
 - svc-recommendation-engine.yaml
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-- name: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui
-  newName: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui
-  newTag: latest
+
