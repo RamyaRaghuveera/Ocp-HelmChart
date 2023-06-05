@@ -35,10 +35,6 @@ resources:
 - svc-recommendation-engine.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-images:
-- name: image-registry.openshift-image-registry.svc:5000/cicd/globex-ui
-  newName: image-registry.openshift-image-registry.svc:5000/cicd/globex-ui
-  newTag: latest
 - name: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui
   newName: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui
   newTag: latest
