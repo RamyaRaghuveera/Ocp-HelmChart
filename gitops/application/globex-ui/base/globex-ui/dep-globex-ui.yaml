@@ -49,15 +49,17 @@ spec:
           value: http://recommendation-engine:8080/score/product
         - name: API_TRACK_PLACEORDER
           value: http://order-placement:8080/placeorder
-        image: quay.io/redhat-gpte/globex-recommendation-ui:app-mod-workshop
+        image: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui:latest
         imagePullPolicy: IfNotPresent
         name: globex-ui
+      
         ports:
         - containerPort: 8080
           name: http
           protocol: TCP
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
+      imagePullSecret: jforg-secret
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
