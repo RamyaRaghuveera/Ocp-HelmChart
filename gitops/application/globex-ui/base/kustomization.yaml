@@ -2,7 +2,6 @@ resources:
 - dep-globex-ui.yaml
 - rt-globex-ui.yaml
 - sa-globex-app-globex-ui.yaml
-- secret-image-registry.yaml
 - svc-globex-ui.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
