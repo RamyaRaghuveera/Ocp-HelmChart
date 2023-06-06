@@ -8,4 +8,4 @@ kind: Kustomization
 images:
 - name: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui
   newName: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui
-  newTag: latest
+  newTag: "1.0"
