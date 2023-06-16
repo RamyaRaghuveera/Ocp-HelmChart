@@ -49,7 +49,7 @@ spec:
           value: http://recommendation-engine:8080/score/product
         - name: API_TRACK_PLACEORDER
           value: http://order-placement:8080/placeorder
-        image: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui:latest
+        image: infyartifactory.jfrog.io/ccdsdam-ocp/globex-ui:1.4
         imagePullPolicy: IfNotPresent
         name: globex-ui
       
